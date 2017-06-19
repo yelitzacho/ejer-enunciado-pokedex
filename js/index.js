@@ -1,42 +1,26 @@
-// 'use strict';
+'use strict';
 
-// const render = (root) => {
-//   root.empty();
-//   const wrapper = $('<div class="wrapper"></div>');
-//   const update = function() {
-//     render(root);
-//   }
-  
-//   wrapper.append(Header(update));
-//   if (state.selectedStation == null) {
-//     wrapper.append(Search(update));
-//   } else {
-//     gmap = Gmap();
-//     wrapper.append(gmap);
-//     //wrapper.append(StationDetails(update));
-//   }
-//   root.append(wrapper);
-//   gmap.init();
-// }
+const render = (root) => {
+  root.empty();
+  const update = function() {
+    render(root);
+  }
 
-// const state = {
-//   stations: null,
-//   selectedStation: null
-// };
+const state = {
+  pokemons: null,
+  selectedPokemon: null
+};
 
-//$(function() {
-//
-//});
-// $( _ => {
+$( _ => {
 
-//   getJSON('stations.json', (err, json) => {
+  getJSON('pokedex.json', (err, json) => {
 
-//     if (err) { return alert(err.message);}
+    if (err) { return alert(err.message);}
 
-//     state.stations = json;
+    state.pokedex = json;
 
-//     const root = $('.root');
-//     render(root);
-//   });
+    const root = $('#root');
+    render(root);
+  });
 
-// });
+});
