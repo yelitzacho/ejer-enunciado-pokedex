@@ -7,6 +7,7 @@
 		<title>Pokédex</title>
 		<link href="https://fonts.googleapis.com/css?family=Exo:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+		<link rel="icon" type="image/png" href="assets/icon/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="assets/icon/style.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/main.css">
@@ -29,33 +30,44 @@
 			<div class="row">
 				<div class="container-pokemon"></div>
 				<div id="modal1" class="modal">
-			  <div class="modal-content">
-			    <h4>Name</h4>
-			    <div class="col s6"></div>
-			    <div class="col s6">
-			    	<p>Especificaciones</p>
-			    	<div class="col s12 light-blue lighten-1"></div>
-		    		<div class="col s12">
-		    			<div class="col s4 light-green darken-2"><span>sadasd</span></div>
-		    			<div class="col s4 purple lighten-3"><span>asdasd</span></div>
-		    		</div>
-		    		<div class="col s12">
-		    			<div class="col s4 orange"><span>sadasd</span></div>
-		    			<div class="col s4 light-blue lighten-1"><span>asdasd</span></div>
-		    			<div class="col s4 pink lighten-3"><span>sadasd</span></div>
-		    			<div class="col s4  lime darken-4"><span>asdasd</span></div>
-		    		</div>
-			    </div>
-			  </div>
-			  <div class="modal-footer">
-			    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-			  </div>
-			</div>
+				  <div class="modal-content">
+				  	<div class="modal-footer">
+			    		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">
+			    		<i class="icon-x"></i>
+			    		</a>
+			  		</div>
+				    <h3>Name</h3>
+				    <div class="col s6"></div>
+				    <div class="col s6">
+				    	<p>Especificaciones</p>
+				    	<div class="col s12 light-blue lighten-1">
+				    		<p>Altura:</p>
+				    		<p>Categoría:</p>
+				    		<p>Peso:</p>
+				    		<p>Habilidades:</p>
+				    		<p>Sexo:</p>
+				    	</div>
+			    		<div class="col s12">
+			    			<h5>Tipo:</h5>
+			    			<div class="col s4 light-green darken-2"><span>Bicho</span></div>
+			    			<div class="col s4 purple lighten-3"><span>Veneno</span></div>
+			    		</div>
+			    		<div class="col s12">
+			    			<h5>Debilidad</h5>
+			    			<div class="col s4 orange"><span>Fuego</span></div>
+			    			<div class="col s4 light-blue lighten-1"><span>Volador</span></div>
+			    			<div class="col s4 pink lighten-3"><span>Roca</span></div>
+			    			<div class="col s4  lime darken-4"><span>Psíquico</span></div>
+			    		</div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</section>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="js/materialize.min.js"></script>
 		<script src="js/components/pokemons.js"></script>
+		<script src="js/components/filtro.js"></script>
 		<script src="js/index.js"></script>
 	</body>
 </html>

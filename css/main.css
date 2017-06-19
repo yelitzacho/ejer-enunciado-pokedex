@@ -81,9 +81,23 @@ header h2{
 }
 
 /*==MODAL==*/
-.modal .modal-content h4{
+.moal{
+	width: 70%;
+}
+.modal .modal-content{
+	padding: 0;
+}
+.modal .modal-content .s12{
+	color: #fff;
+	display: block;
+}
+.modal .modal-content h3{
 	color: #646464;
 	font-weight: 500;
 	text-align: center;
 	padding-top: 12px;
+}
+.modal .modal-content h5{
+	color: #646464;
+	font-weight: 40;
 }
