@@ -4,51 +4,58 @@
 		<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pokédex</title>
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/main.css">
+		<title>Pokédex</title>
+		<link href="https://fonts.googleapis.com/css?family=Exo:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/icon/style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<ul class="pokemones">
-			<li>
-				<div class="style">
-					<img src="http://serebii.net/art/th/1.png" alt="pokemon">
-					<!-- <div>
-						<a><img src="assets/icon/pokeball_gray.png" alt="pokebola"></a>
-						<a><img src="assets/icon/valentines-heart.png" alt="corazón"></a>
-						<a><img src="assets/icon/data.png"></a>
-					</div> -->
+		<header class="container">
+			<div class="row header-row">
+				<h2>Pokédex</h2>
+				<nav class="col s11">
+					<input class="" type="text">
+					<i class="icons icon-search"></i>
+					<i class="icons icon-x"></i>
+				</nav>
+				<div class="col s1 button-container">
+					<button>A-Z</button>
 				</div>
-			</li>
-			<li>
-				<div class="style">
-					<img src="http://serebii.net/art/th/2.png" alt="pokemon">
-				</div>
-			</li>
-			<li>
-				<div class="style">
-					<img src="http://serebii.net/art/th/3.png" alt="pokemon">
-				</div>
-			</li>
-			<li>
-				<div class="style">
-					<img src="http://serebii.net/art/th/4.png" alt="pokemon">
-				</div>
-			</li>
-			<li>
-				<div class="style">
-					<img src="http://serebii.net/art/th/5.png" alt="pokemon">
-				</div>
-			</li>
-		</ul>
-		<script src="js/jquery-3.2.1.min"></script>
+			</div>
+		</header>
+		<section class="container">
+			<div class="row">
+				<div class="container-pokemon"></div>
+				<div id="modal1" class="modal">
+			  <div class="modal-content">
+			    <h4>Name</h4>
+			    <div class="col s6"></div>
+			    <div class="col s6">
+			    	<p>Especificaciones</p>
+			    	<div class="col s12 light-blue lighten-1"></div>
+		    		<div class="col s12">
+		    			<div class="col s4 light-green darken-2"><span>sadasd</span></div>
+		    			<div class="col s4 purple lighten-3"><span>asdasd</span></div>
+		    		</div>
+		    		<div class="col s12">
+		    			<div class="col s4 orange"><span>sadasd</span></div>
+		    			<div class="col s4 light-blue lighten-1"><span>asdasd</span></div>
+		    			<div class="col s4 pink lighten-3"><span>sadasd</span></div>
+		    			<div class="col s4  lime darken-4"><span>asdasd</span></div>
+		    		</div>
+			    </div>
+			  </div>
+			  <div class="modal-footer">
+			    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			  </div>
+			</div>
+			</div>
+		</section>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="js/materialize.min.js"></script>
-    <script src="js/utils/get-json.js"></script>
-    <script src="js/utils/filters.js"></script>
-    <script src="js/components/header.js"></script>
-    <script src="js/components/search.js"></script>
-    <script src="js/components/pokemonDetails.js"></script>
-    <script src="js/index.js"></script>
+		<script src="js/components/pokemons.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>

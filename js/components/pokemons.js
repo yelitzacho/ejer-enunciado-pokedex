@@ -2,36 +2,26 @@ $(document).ready(function(){
 
 	for(var i= 1; i <= 150; i++) {
 		const urlImg = 'http://serebii.net/art/th/'+i+'.png';
-		const ul = $('<ul></ul>');
-		const li = $('<li></li>');
-		const pokemon = $('<div></div>');
-		const div = $('<div></div>');
-		const img = $('<div><img class=""></div>');
-		const span = $('<span></span>');
-		const pokemonInfo = $('<p></p>');
-		const pokebola = $('<a><img src="assets/icon/pokeball_gray.png" alt="pokebola"></a>');
-		const heart = $('<a><img src="assets/icon/valentines-heart.png" alt="corazón"></a>');
-		const trade = $('<a><img src="assets/icon/data.png" alt="data"></a>');
+		const img = $('<img>');
+		const cardImage = $('<div class="card-image"></div>');
+		const iconPokeball = $('<a href="#modal1"><i class="icon icon-pokeball"></i></a>');
+		const iconHeart = $('<a><i class="icon icon-heart2"></i></a>');
+		const iconBattle = $('<a><i class="icon icon-battle"></i></a>');
+		const name =$('<h5>Hola</h5>');
+		const div = $('<div class="center-align"></div>');
+		const cardContent = $('<div class="card-content"></div>');
+		const card = $('<div class="card"></div>');
+		const col = $('<div class="col s3 m3"></div>');
 
 		img.attr('src',urlImg);
-		div.append(img);
-		pokemonInfo.append(pokebola, heart, trade);
-		span.append(span);
-		pokemon.append(div, pokemonInfo);
-		li.append(pokemon);
-		ul.append(li);
+		cardImage.append(img);
+		div.append(iconPokeball, iconHeart, iconBattle,name);
+		cardContent.append(div);
+		card.append(cardImage, cardContent);
+		col.append(card);
 
-		$('#container-pokemon').append(li);
+		$('.container-pokemon').append(col);
 	}
-})
 
-// 	var modal = $('#modal');
-// 	var imgModal = $('#modalImg');
-
-// 	$('#container-pokemon').click(function(e){
-// 		if (e.target.tagName == "IMG") {
-// 			modal.style.display = "block";
-// 			imgModal.src = e.target.src;
-// 		}
-// 	});
-// });
+    $('.modal').modal();
+});
